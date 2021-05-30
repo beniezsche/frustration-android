@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="mood_filter_default">0</integer>
+    <integer name="mood_filter_all">0</integer>
+    <integer name="mood_filter_sad">1</integer>
+    <integer name="mood_filter_ennui">2</integer>
+    <integer name="mood_filter_happy">3</integer>
+    <integer name="mood_filter_raging">4</integer>
+
+    <integer name="post_character_limit">1000</integer>
+    <integer name="comment_character_limit">300</integer>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <stroke
+        android:color="@color/bg_purple"
+        android:width="5dp"/>
+    <padding
+        android:top="@dimen/select_mood_border_padding"
+        android:bottom="@dimen/select_mood_border_padding"
+        android:right="@dimen/select_mood_border_padding"
+        android:left="@dimen/select_mood_border_padding" />
+     <corners
+         android:radius="@dimen/corner_radius"/>
+</shape>

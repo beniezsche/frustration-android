@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "929783642782",
+    "project_id": "osuna-8c74c",
+    "storage_bucket": "osuna-8c74c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929783642782:android:f44aa50f931a0ee6d9598f",
+        "android_client_info": {
+          "package_name": "i.am.frustrated"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929783642782-1i42ds41856mv9fm0hnae5ujqs2nqk4j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbL58An00pzHy8OtF4BtVrW854pPrdZGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929783642782-1i42ds41856mv9fm0hnae5ujqs2nqk4j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

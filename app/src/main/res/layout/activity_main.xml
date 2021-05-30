@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_dark_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabLayout_posts"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="@dimen/small_margin"-->
+<!--        android:padding="@dimen/xxsmall_margin"-->
+<!--        app:tabInlineLabel="true"-->
+<!--        android:background="@drawable/background_tab_layout"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header"-->
+<!--        app:tabSelectedTextColor="@color/colorAccent"-->
+<!--        app:tabIndicator="@drawable/background_tab_layout_selected"-->
+<!--        app:tabTextColor="@android:color/white">-->
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tabLayout_posts"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="45dp"-->
+<!--        android:layout_margin="@dimen/small_margin"-->
+<!--        android:padding="@dimen/xxsmall_margin"-->
+<!--        app:tabInlineLabel="true"-->
+<!--        app:tabIndicatorFullWidth="false"-->
+<!--        app:tabIndicatorHeight="0dp"-->
+<!--        android:background="@drawable/background_tab_layout"-->
+<!--        app:tabSelectedTextColor="@color/bg_purple"-->
+<!--        app:tabTextColor="@color/color_text_white"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header">-->
+
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+<!--    <androidx.viewpager2.widget.ViewPager2-->
+<!--        android:id="@+id/viewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tabLayout_posts">-->
+
+<!--    </androidx.viewpager2.widget.ViewPager2>-->
+
+    <fragment
+        android:id="@+id/all_post_fragment"
+        android:name="i.am.frustrated.fragments.AllPostsFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_baseline_add_24"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="@dimen/bottom_bar_height"-->
+<!--        android:background="@color/bg_settings_item"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:visibility="gone"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_settings"-->
+<!--            android:layout_width="@dimen/bottom_bar_icon_size"-->
+<!--            android:layout_height="@dimen/bottom_bar_icon_size"-->
+<!--            android:layout_margin="@dimen/small_margin"-->
+<!--            android:layout_weight="0.1"-->
+<!--            android:src="@drawable/ic_settings" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="0.8"-->
+<!--            android:hint="Search"-->
+<!--            android:textColorHint="@android:color/white"-->
+<!--            android:visibility="gone" />-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_add_post"-->
+<!--            android:layout_width="@dimen/bottom_bar_icon_size"-->
+<!--            android:layout_height="@dimen/bottom_bar_icon_size"-->
+<!--            android:layout_margin="@dimen/small_margin"-->
+<!--            android:layout_weight="0.1"-->
+<!--            android:src="@drawable/ic_add_post" />-->
+
+
+<!--    </LinearLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

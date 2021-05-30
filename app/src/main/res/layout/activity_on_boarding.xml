@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_dark_black"
+    tools:context=".activities.OnBoardingActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:text="@string/onboarding_welcome"
+        android:textColor="@color/bg_purple"
+        android:textSize="@dimen/text_size_big"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:fadeScrollbars="false"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/background_purple_curved"
+        android:layout_marginStart="@dimen/medium_margin"
+        android:layout_marginEnd="@dimen/medium_margin"
+        app:layout_constraintBottom_toTopOf="@+id/ll_progress"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="@dimen/xsmall_margin"
+            android:paddingEnd="@dimen/xsmall_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:text="Express your thoughts."
+                android:textColor="@color/settings_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:text="Share your uncensored thoughts and vent freely."
+                android:textColor="@color/write_hint_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:text="Empathise with other users."
+                android:textColor="@color/settings_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:text="You can empathise with other users by clicking the corresponding mood emoji of their posts"
+                android:textColor="@color/write_hint_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:text="Set Self-Destruct timer to your posts."
+                android:textColor="@color/settings_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:text="By default, your posts automatically get destroyed 24 hours from the time of posting."
+                android:textColor="@color/write_hint_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:text="Completely secure and anonymous"
+                android:textColor="@color/settings_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:text="We do not collect any personally identifiable information such as age, gender, etc so even we don't know who you are."
+                android:textColor="@color/write_hint_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:text="You control your feed."
+                android:textColor="@color/settings_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:text="We give users the freedom to remove posts from their feed that they find offensive as well as the ability to report posts that break our rules."
+                android:textColor="@color/write_hint_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:paddingStart="@dimen/small_margin"
+                android:paddingEnd="@dimen/small_margin"
+                android:paddingTop="@dimen/xsmall_margin"
+                android:paddingBottom="@dimen/xsmall_margin"
+                android:background="@drawable/background_setting_item"
+                android:text="Rules."
+                android:textColor="@color/settings_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:text="DO NOT target or bully any specific posts or users."
+                android:textColor="@color/settings_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:text="Users that promote hate based on identity or vulnerability will be banned."
+                android:textColor="@color/write_hint_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:text="DO NOT post or request personal or confidential information"
+                android:textColor="@color/settings_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:text="We have a zero tolerace policy on doxxing."
+                android:textColor="@color/write_hint_color"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xsmall_margin"
+                android:text="DO NOT post spam."
+                android:textColor="@color/settings_color"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:text="Users that spam will be banned."
+                android:textColor="@color/write_hint_color"
+                android:textSize="15sp"/>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_margin"
+        android:visibility="gone"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xsmall_margin"
+            android:drawableStart="@drawable/ic_dot"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:text="@string/onboarding_guideline_one" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xsmall_margin"
+            android:drawableStart="@drawable/ic_dot"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:text="@string/onboarding_guideline_two" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xsmall_margin"
+            android:drawableStart="@drawable/ic_dot"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:text="@string/onboarding_guideline_three" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/bt_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:background="@drawable/background_purple_curved"
+            android:padding="@dimen/small_margin"
+            android:text="@string/onboarding_continue"
+            android:textColor="@color/color_text_white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_margin"
+            android:indeterminate="true"
+            android:indeterminateTint="@android:color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

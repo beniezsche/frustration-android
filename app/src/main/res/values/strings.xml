@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Osuna</string>
+    <string name="shared_pref_name">shared_pref</string>
+    <string name="fetching_credentials">Fetching your credentials...</string>
+    <string name="venter_id">venter_id</string>
+    <string name="token">token</string>
+    <string name="mood_filter">mood_filter</string>
+    <string name="is_admin">is_admin</string>
+    <string name="vent_cred_upload">is_venter_cred_upload</string>
+    <string name="is_nsfw_allowed">is_nsfw_allowed</string>
+    <string name="is_onboading_done">is_onboarding_done</string>
+    <string name="feed_all_posts">Home</string>
+    <string name="feed_my_posts">Profile</string>
+
+    <string name="time_5_mins">5 mins</string>
+    <string name="time_30_mins">30 mins</string>
+    <string name="time_1_hour">1 hr</string>
+    <string name="time_6_hours">6 hrs</string>
+    <string name="time_12_hours">12 hrs</string>
+    <string name="time_16_hours">16 hrs</string>
+    <string name="time_1_day">1 day</string>
+
+    <string name="sample_post_text">Fuck your blueberry pie you fucking moron just fucking die you piece of shit. You can\'t cook for shit. Even if I was in a fucking uninhabited island for a fucking century I wouldn\'t have your fucking shit blueberry pie. You can stuff you nasty ass blueberry pie up your blue ass.</string>
+    <string name="sample_post_text_short">Fuck you</string>
+    <string name="read_more">…Read More</string>
+
+    <string name="settings_item_credentials">Credentials</string>
+    <string name="settings_item_guidelines">Guidelines</string>
+
+    <string name="no_posts">Things are looking awfully quiet. C\'mon, share it with everyone, you\'ll feel better.</string>
+    <string name="loading_posts">Bringing you the latest spicy shit…</string>
+    <string name="onboarding_welcome">Welcome to Osuna.</string>
+
+    <string name="onboarding_guideline_one">Vent and express your unfiltered thoughts.</string>
+    <string name="onboarding_guideline_two">Set timer for your thoughts. Your posts are deleted automatically after 24 hours by default.</string>
+    <string name="onboarding_guideline_three">Completely secure and anonymous. Even we don\'t know who you are.</string>
+    <string name="onboarding_continue">Ok, got it.</string>
+
+    <string name="guideline_one">No death or rape threats.</string>
+    <string name="guideline_two">No doxxing. Change the name if you really wanna rant about that person.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--    <string name="guideline_three">Completely secure and anonymous. Even we don\'t know who you are.</string>-->
+
+    <string name="post_option_delete">Delete Post</string>
+    <string name="post_option_report">Report Post</string>
+    <string name="post_option_block">Block Post</string>
+    <string name="post_option_enable_comments">Enable Comments</string>
+    <string name="post_option_disable_comments">Disable Comments</string>
+
+    <string name="write_hint">Share your thoughts…</string>
+
+    <string name="no_of_posts">%d Posts</string>
+
+    <string-array name="post_report_options">
+
+        <item></item>
+    </string-array>
+
+    <string-array name="expiry">
+
+        <item>1h</item>
+        <item>8h</item>
+        <item>16h</item>
+        <item>24h</item>
+    </string-array>
+
+    <string name="post_action_confirmation">Are you sure you want to %s this post?</string>
+    <string name="post_action_toggle_comment_confirmation">Are you sure you want to %s on this post?</string>
+
+    <string name="post_report_option_one">This post is abusing/threatening.</string>
+    <string name="post_report_option_two">This post is doxxing someone.</string>
+    <string name="post_report_option_three">This post has NSFW material without tag.</string>
+    <string name="post_report_option_four">This post is spam.</string>
+
+    <string name="mood_sad">Sad</string>
+    <string name="mood_all">All</string>
+    <string name="mood_ennui">Ennui</string>
+    <string name="mood_happy">Happy</string>
+    <string name="mood_raging">Raging</string>
+
+    <string name="time_ago_posted">%s ago</string>
+
+
+</resources>
